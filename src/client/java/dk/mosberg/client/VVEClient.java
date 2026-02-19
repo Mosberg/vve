@@ -18,7 +18,7 @@ public class VVEClient implements ClientModInitializer {
                                 villageName, screenWidth);
                     }
                 });
-        // Register tooltip rendering for villagers (stub, needs entity targeting logic)
-        // Use WorldRenderEvents for overlays if needed.
+        // TODO: Register tooltip rendering for villagers (stub, needs entity targeting logic)
+        // TODO: Use WorldRenderEvents for overlays if needed.
     }
 }

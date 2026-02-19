@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Personality Templates",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "templates": [
+    {
+      "id": "brave_leader",
+      "traits": ["brave", "leadership"],
+      "preferred_goals": ["mastery", "adventure"],
+      "biomes": ["mountain", "plains"],
+      "professions": ["guard_captain", "blacksmith"]
+    },
+    {
+      "id": "curious_trader",
+      "traits": ["curious", "trading"],
+      "preferred_goals": ["wealth", "adventure"],
+      "biomes": ["forest", "plains"],
+      "professions": ["hunter", "engineer"]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Personal Goals Configuration",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "description": "Dynamic villager goals that generate quests and drive villager behavior over time.",
+  "personal_goals": {
+    "goal_types": {
+      "family": {
+        "weight": 0.3,
+        "description": "Wants to start/expand family",
+        "quests": ["find_partner", "build_nursery"],
+        "progress": ["met_partner", "expecting_child"]
+      },
+      "wealth": {
+        "weight": 0.25,
+        "description": "Amassing personal fortune",
+        "quests": ["rare_materials", "expand_trades"],
+        "progress": ["chest_full", "emerald_rich"]
+      },
+      "adventure": {
+        "weight": 0.2,
+        "description": "Seeks exploration and discovery",
+        "quests": ["explore_ruins", "find_artifact"],
+        "progress": ["found_relic", "mapped_caves"]
+      },
+      "mastery": {
+        "weight": 0.25,
+        "description": "Perfect their craft",
+        "quests": ["masterpiece_item", "rare_recipe"],
+        "progress": ["expert_crafter", "legendary_work"]
+      }
+    },
+    "profession_goals": {
+      "farmer": {
+        "goals": [
+          {
+            "id": "mega_farm",
+            "description": "Expand farm to feed entire village",
+            "requirements": { "crops_planted": 512 }
+          }
+        ]
+      },
+      "blacksmith": {
+        "goals": [
+          {
+            "id": "legendary_forge",
+            "description": "Build ultimate smithing setup",
+            "requirements": { "netherite_ingots": 10 }
+          }
+        ]
+      }
+    },
+    "completion_rewards": {
+      "reputation": 200,
+      "special_trades": true,
+      "unique_dialogue": true
+    }
+  }
+}

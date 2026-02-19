@@ -9,7 +9,6 @@ import java.util.Map;
  */
 public class VillageRegistry {
     static {
-        // Ensure built-in types are registered for tests
         try {
             Class.forName("dk.mosberg.village.BuiltinVillageTypes");
             dk.mosberg.village.BuiltinVillageTypes.registerAll();

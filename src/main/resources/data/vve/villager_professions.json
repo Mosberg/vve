@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Professions",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "villager_professions": [
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "trades": ["pelts", "meat", "arrows"],
+      "abilities": ["track_animals", "set_traps"],
+      "progression": ["basic_traps", "advanced_bow", "pack_hunting"]
+    },
+    {
+      "id": "engineer",
+      "name": "Engineer",
+      "trades": ["redstone", "contraptions"],
+      "abilities": ["build_redstone"],
+      "progression": ["basic_gates", "automations", "village_defenses"]
+    },
+    {
+      "id": "brewer",
+      "name": "Brewer",
+      "trades": ["potions"],
+      "abilities": ["craft_potions"],
+      "progression": ["basic_potions", "buff_potions", "rare_elixirs"]
+    },
+    {
+      "id": "scribe",
+      "name": "Scribe",
+      "trades": ["enchanted_books", "scrolls"],
+      "abilities": ["copy_books"],
+      "progression": ["basic_enchants", "rare_enchants", "custom_scrolls"]
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "trades": ["buff_meals"],
+      "abilities": ["advanced_cooking"],
+      "progression": ["basic_meals", "buff_foods", "feast_preparation"]
+    },
+    {
+      "id": "guard_captain",
+      "name": "Guard Captain",
+      "trades": ["armor", "weapons"],
+      "abilities": ["organize_patrols"],
+      "progression": ["basic_training", "elite_guards", "siege_defense"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Themes",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "village_themes": {
+    "rustic": {
+      "blocks": ["oak_planks", "cobblestone", "thatch"],
+      "decor": ["hay_bales", "barrels"]
+    },
+    "magical": {
+      "blocks": ["amethyst", "glowstone", "enchanted_bookshelf"],
+      "decor": ["runes", "cauldrons"]
+    },
+    "industrial": {
+      "blocks": ["iron", "copper", "deepslate"],
+      "decor": ["gears", "pipes"]
+    }
+  }
+}

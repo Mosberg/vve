@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Reputation Levels",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "reputation_levels": [
+    {
+      "level": "outcast",
+      "min_score": -100,
+      "effects": ["hostile_trades", "no_quests"]
+    },
+    {
+      "level": "stranger",
+      "min_score": 0,
+      "effects": ["basic_trades"]
+    },
+    {
+      "level": "friend",
+      "min_score": 100,
+      "effects": ["discounts", "simple_quests"]
+    },
+    {
+      "level": "ally",
+      "min_score": 500,
+      "effects": ["priority_trades", "complex_quests"]
+    },
+    {
+      "level": "champion",
+      "min_score": 1000,
+      "effects": ["exclusive_trades", "village_help"]
+    },
+    {
+      "level": "honorary_villager",
+      "min_score": 2000,
+      "effects": ["full_access", "ownership_perks"]
+    }
+  ]
+}

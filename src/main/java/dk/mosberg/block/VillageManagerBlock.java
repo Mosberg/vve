@@ -25,8 +25,8 @@ public class VillageManagerBlock extends Block {
     public ActionResult onUse(BlockState state, World world, net.minecraft.util.math.BlockPos pos,
             PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient()) {
-            // Send packet to client to open management menu
-            // (Stub: actual networking code needed)
+            // TODO: Send packet to client to open management menu
+            // TODO: (Stub: actual networking code needed)
             System.out.println("Triggering management menu open on client");
         }
         return ActionResult.SUCCESS;

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Story Arcs",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "story_arcs": [
+    {
+      "id": "village_founding",
+      "name": "Village Founding",
+      "quests": ["gather_resources", "build_center", "first_residents"]
+    },
+    {
+      "id": "rival_diplomacy",
+      "name": "Rival Village Diplomacy",
+      "quests": ["scout_rivals", "trade_agreement", "alliance_or_war"]
+    },
+    {
+      "id": "bandit_war",
+      "name": "Bandit War",
+      "quests": ["clear_camps", "rescue_hostages", "destroy_base"]
+    }
+  ]
+}

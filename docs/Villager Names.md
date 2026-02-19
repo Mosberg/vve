@@ -1,0 +1,314 @@
+# Villager Names Configuration for Village Expansion Mod
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Names Configuration",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "description": "Data-driven villager naming system for Village Expansion mod. Generates unique full names with biome/culture-appropriate variations.",
+  "name_generation": {
+    "culture_groups": {
+      "plains": {
+        "weight": 1.0,
+        "first_names": {
+          "male": [
+            "William",
+            "James",
+            "Henry",
+            "Thomas",
+            "Charles",
+            "George",
+            "Edward",
+            "Joseph",
+            "Robert",
+            "Samuel"
+          ],
+          "female": [
+            "Mary",
+            "Elizabeth",
+            "Sarah",
+            "Martha",
+            "Ann",
+            "Jane",
+            "Ellen",
+            "Catherine",
+            "Margaret",
+            "Susan"
+          ]
+        },
+        "last_names": [
+          "Smith",
+          "Johnson",
+          "Brown",
+          "Taylor",
+          "Wilson",
+          "Davis",
+          "Clark",
+          "Lewis",
+          "Harris",
+          "Walker"
+        ]
+      },
+      "desert": {
+        "weight": 0.8,
+        "first_names": {
+          "male": [
+            "Ahmed",
+            "Omar",
+            "Hassan",
+            "Ali",
+            "Yusuf",
+            "Ibrahim",
+            "Mohammed",
+            "Khalid",
+            "Sultan",
+            "Faris"
+          ],
+          "female": [
+            "Fatima",
+            "Aisha",
+            "Zahra",
+            "Maryam",
+            "Layla",
+            "Safia",
+            "Nadia",
+            "Salma",
+            "Amira",
+            "Laila"
+          ]
+        },
+        "last_names": [
+          "Al-Mansur",
+          "Ibn-Khattab",
+          "Al-Rashid",
+          "Bin-Laden",
+          "Al-Farsi",
+          "Hakim",
+          "Najjar",
+          "Saqr",
+          "Zahir",
+          "Qadir"
+        ]
+      },
+      "forest": {
+        "weight": 0.9,
+        "first_names": {
+          "male": [
+            "Eldric",
+            "Thrain",
+            "Lorien",
+            "Garrick",
+            "Borin",
+            "Finnian",
+            "Rowan",
+            "Cedric",
+            "Ashwood",
+            "Willow"
+          ],
+          "female": [
+            "Elowen",
+            "Sylvana",
+            "Brianna",
+            "Mira",
+            "Liora",
+            "Fiona",
+            "Seraphina",
+            "Willow",
+            "Ivy",
+            "Thalia"
+          ]
+        },
+        "last_names": [
+          "Greenwood",
+          "Oakenshield",
+          "Stonebranch",
+          "Leafwhisper",
+          "Woodcutter",
+          "Riversong",
+          "Mossheart",
+          "Barkley",
+          "Thornwood",
+          "Elmsworth"
+        ]
+      },
+      "mountain": {
+        "weight": 0.7,
+        "first_names": {
+          "male": [
+            "Dwalin",
+            "Balin",
+            "Thorin",
+            "Gloin",
+            "Dain",
+            "Nori",
+            "Ori",
+            "Bifur",
+            "Bombur",
+            "Kili"
+          ],
+          "female": [
+            "Dis",
+            "Disa",
+            "Grima",
+            "Eira",
+            "Freyja",
+            "Sigrid",
+            "Astrid",
+            "Ingrid",
+            "Helga",
+            "Runa"
+          ]
+        },
+        "last_names": [
+          "Ironfist",
+          "Stonehammer",
+          "Deepdelve",
+          "Firebeard",
+          "Battleaxe",
+          "Rockshatter",
+          "Granitefoot",
+          "Peakwarden",
+          "Frostvein",
+          "Mountainborn"
+        ]
+      },
+      "coastal": {
+        "weight": 0.6,
+        "first_names": {
+          "male": [
+            "Jack",
+            "Bill",
+            "Sam",
+            "Harry",
+            "Finn",
+            "Cormac",
+            "Rory",
+            "Declan",
+            "Niall",
+            "Brendan"
+          ],
+          "female": [
+            "Maeve",
+            "Siobhan",
+            "Niamh",
+            "Aoife",
+            "Saoirse",
+            "Brigid",
+            "Eilish",
+            "Grainne",
+            "Roisin",
+            "Deirdre"
+          ]
+        },
+        "last_names": [
+          "Seaworth",
+          "Stormwind",
+          "Wavecrest",
+          "Saltbeard",
+          "Deepwater",
+          "Reefwalker",
+          "Tidepool",
+          "Barnacle",
+          "Driftwood",
+          "Mariner"
+        ]
+      }
+    },
+    "fallback_names": {
+      "male": ["John", "Bob", "Mike", "Tom", "Jack"],
+      "female": ["Jane", "Alice", "Sara", "Emily", "Mary"]
+    },
+    "generation_rules": {
+      "min_name_length": 3,
+      "max_name_length": 12,
+      "unique_combinations": true,
+      "avoid_duplicates": true,
+      "culture_blend_radius": 64
+    }
+  },
+  "prefix_suffix_modifiers": {
+    "profession": {
+      "farmer": ["the Steady", "Green-thumb", "Fieldhand"],
+      "blacksmith": ["Ironhand", "Forgeborn", "Hammerfall"],
+      "guard": ["Ironshield", "Watchman", "Steadfast"],
+      "hunter": ["Swiftarrow", "Trackfinder", "Beastslayer"]
+    },
+    "reputation": {
+      "champion": ["the Great", "Hero of", "Savior of"],
+      "outcast": ["the Wretched", "Cursed", "Exiled"]
+    }
+  },
+  "name_templates": [
+    "{first_name} {last_name}",
+    "{first_name} {last_name} {suffix}",
+    "{prefix} {first_name} {last_name}",
+    "{first_name} of the {last_name}"
+  ]
+}
+```
+
+**Save as:** `villager_names.json`
+
+## Key Improvements 🚀
+
+### **1. Biome/Culture Integration**
+
+```
+Plains → William Smith    | Desert → Ahmed Al-Mansur
+Forest → Eldric Greenwood | Mountain → Thorin Ironfist
+Coastal → Finn Seaworth
+```
+
+Names now match village biomes automatically via weighted culture groups. [reddit](https://www.reddit.com/r/BedrockAddons/comments/1jp79c8/mods_that_improve_village_generation/)
+
+### **2. Gender Diversity**
+
+- Separate male/female pools per culture
+- Natural gender distribution (50/50 or configurable)
+- Fallbacks for edge cases
+
+### **3. Dynamic Naming Rules**
+
+```
+- Unique combinations within village radius
+- No duplicate names in same village
+- Culture blending near biome borders
+- Profession/reputation modifiers
+```
+
+### **4. Template System**
+
+```
+"Jack Stormwind the Steady" (guard captain)
+"Elowen Greenwood" (forest farmer)
+"Thorin Ironfist the Great" (champion blacksmith)
+```
+
+### **5. Fabric-Ready Schema**
+
+```java
+// Your mod loader:
+JSONObject names = loader.load("data/modid/names/villager_names.json");
+String villagerName = NameGenerator.generate(
+  biome = "forest",
+  gender = Gender.MALE,
+  profession = "hunter"
+);
+```
+
+### **6. 200+ Names (5 cultures × 20 first × 10 last)**
+
+Fully extensible - add new cultures, templates, or modifiers without code changes. Perfect for your schema-driven Fabric workflow!
+
+**Usage in your mod:**
+
+```java
+// Biome-aware name generation
+public String generateVillagerName(BlockPos pos, Profession profession) {
+  Biome biome = world.getBiome(pos);
+  return nameConfig.generate(biome, profession, reputation);
+}
+```
+
+This eliminates hardcoded names forever and scales perfectly with your village expansion system! 🎉

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Likes/Dislikes Configuration",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "description": "Item-based villager preferences that affect trading prices, gifts, and dialogue.",
+  "preferences": {
+    "culture_groups": {
+      "plains": {
+        "likes": [
+          { "item": "minecraft:wheat", "value": 10 },
+          { "item": "minecraft:bread", "value": 8 },
+          { "item": "minecraft:apple", "value": 6 }
+        ],
+        "dislikes": [
+          { "item": "minecraft:rotten_flesh", "value": -15 },
+          { "item": "minecraft:spider_eye", "value": -12 }
+        ]
+      },
+      "forest": {
+        "likes": [
+          { "item": "minecraft:oak_sapling", "value": 12 },
+          { "item": "minecraft:sweet_berries", "value": 9 },
+          { "item": "minecraft:golden_apple", "value": 20 }
+        ],
+        "dislikes": [
+          { "item": "minecraft:dead_bush", "value": -10 },
+          { "item": "minecraft:poisonous_potato", "value": -18 }
+        ]
+      }
+    },
+    "profession_specific": {
+      "blacksmith": {
+        "likes": [
+          { "item": "minecraft:iron_ingot", "value": 15 },
+          { "item": "minecraft:diamond", "value": 30 }
+        ],
+        "dislikes": [{ "item": "minecraft:stick", "value": -5 }]
+      },
+      "hunter": {
+        "likes": [
+          { "item": "minecraft:rabbit_hide", "value": 12 },
+          { "item": "minecraft:leather", "value": 10 }
+        ]
+      }
+    },
+    "gift_values": {
+      "perfect_gift": 25,
+      "good_gift": 10,
+      "neutral": 0,
+      "bad_gift": -5,
+      "terrible_gift": -15
+    }
+  }
+}

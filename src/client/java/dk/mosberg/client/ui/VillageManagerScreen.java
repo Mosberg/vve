@@ -14,18 +14,18 @@ public class VillageManagerScreen extends Screen {
 
     @Override
     protected void init() {
-        // Example: Add buttons for upgrades, jobs, treasury, happiness
+        // TODO: Example: Add buttons for upgrades, jobs, treasury, happiness
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Upgrade Village"), btn -> {
-            // Upgrade logic
+            // TODO: Upgrade logic
         }).position(10, 20).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Assign Jobs"), btn -> {
-            // Job assignment logic
+            // TODO: Job assignment logic
         }).position(10, 50).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Manage Treasury"), btn -> {
-            // Treasury logic
+            // TODO: Treasury logic
         }).position(10, 80).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Track Happiness"), btn -> {
-            // Happiness logic
+            // TODO: Happiness logic
         }).position(10, 110).size(120, 20).build());
     }
 }

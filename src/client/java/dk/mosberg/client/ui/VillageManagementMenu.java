@@ -22,22 +22,22 @@ public class VillageManagementMenu {
         net.minecraft.client.MinecraftClient.getInstance()
                 .setScreen(new net.minecraft.client.gui.screen.Screen(
                         net.minecraft.text.Text.of("Village Management Menu")) {
-                    // Stub screen, add widgets and logic as needed
+                    // TODO: Stub screen, add widgets and logic as needed
                 });
     }
 
     public void assignJob(String villagerId, String jobId) {
-        // Stub: Send job assignment to server or update local state
+        // TODO: Stub: Send job assignment to server or update local state
         System.out.printf("Assigning job %s to villager %s\n", jobId, villagerId);
     }
 
     public void setPatrolRoute(String routeId) {
-        // Stub: Send patrol route to server or update local state
+        // TODO: Stub: Send patrol route to server or update local state
         System.out.printf("Setting patrol route %s\n", routeId);
     }
 
     public void approveExpansion(String expansionId) {
-        // Stub: Send expansion approval to server or update local state
+        // TODO: Stub: Send expansion approval to server or update local state
         System.out.printf("Approving expansion %s\n", expansionId);
     }
 }

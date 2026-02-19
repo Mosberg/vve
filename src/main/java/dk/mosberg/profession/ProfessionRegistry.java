@@ -9,7 +9,6 @@ import java.util.Map;
  */
 public class ProfessionRegistry {
     static {
-        // Ensure built-in professions are registered for tests
         try {
             Class.forName("dk.mosberg.profession.BuiltinProfessions");
             dk.mosberg.profession.BuiltinProfessions.registerAll();

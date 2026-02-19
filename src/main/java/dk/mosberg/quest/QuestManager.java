@@ -9,7 +9,6 @@ import java.util.Map;
  */
 public class QuestManager {
     static {
-        // Ensure built-in quests and story arcs are registered for tests
         try {
             Class.forName("dk.mosberg.quest.BuiltinQuests");
             dk.mosberg.quest.BuiltinQuests.registerAll();

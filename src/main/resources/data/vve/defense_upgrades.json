@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Defense Upgrades",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "defense_upgrades": [
+    {
+      "name": "guard_towers",
+      "cost": { "wood": 50, "stone": 30 },
+      "effect": "increased_range"
+    },
+    {
+      "name": "alarm_bells",
+      "cost": { "iron": 10, "redstone": 5 },
+      "effect": "faster_response"
+    },
+    {
+      "name": "reinforced_gates",
+      "cost": { "obsidian": 5, "iron": 20 },
+      "effect": "siege_resistance"
+    }
+  ]
+}

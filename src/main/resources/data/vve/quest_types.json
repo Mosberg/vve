@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Quest Types",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "quest_types": ["delivery", "crafting", "escort", "monster_hunt", "village_project"]
+}

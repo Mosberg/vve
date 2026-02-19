@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villager Personalities",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "villager_personalities": {
+    "traits": ["brave", "lazy", "curious", "greedy", "kind", "grumpy", "cheerful", "cautious"],
+    "skills": ["farming", "combat", "crafting", "trading", "leadership"]
+  }
+}

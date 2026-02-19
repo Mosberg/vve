@@ -10,7 +10,6 @@ import java.util.Map;
 public class ReputationManager {
     private static final Map<String, Integer> PLAYER_REP = new HashMap<>(); // playerId -> rep
     static {
-        // For test isolation, always clear PLAYER_REP
         PLAYER_REP.clear();
     }
 

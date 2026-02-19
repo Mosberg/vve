@@ -16,10 +16,11 @@ public class VillagerPersonality {
     private final List<String> dislikes;
     private final List<String> goals;
     private final Map<String, Object> properties;
+    public int reputation;
 
     public VillagerPersonality(String firstName, String lastName, String backstory,
             List<String> traits, List<String> skills, List<String> likes, List<String> dislikes,
-            List<String> goals, Map<String, Object> properties) {
+            List<String> goals, Map<String, Object> properties, int reputation) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.backstory = backstory;
@@ -29,6 +30,7 @@ public class VillagerPersonality {
         this.dislikes = dislikes;
         this.goals = goals;
         this.properties = properties;
+        this.reputation = reputation;
     }
 
     public String getFirstName() {
@@ -65,6 +67,10 @@ public class VillagerPersonality {
 
     public Map<String, Object> getProperties() {
         return properties;
+    }
+
+    public int getReputation() {
+        return reputation;
     }
 
 }

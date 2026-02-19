@@ -9,7 +9,6 @@ import java.util.Map;
  */
 public class DefenseManager {
     static {
-        // Ensure built-in threats and upgrades are registered for tests
         try {
             Class.forName("dk.mosberg.defense.BuiltinDefense");
             dk.mosberg.defense.BuiltinDefense.registerAll();

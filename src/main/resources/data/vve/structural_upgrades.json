@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Structural Upgrades",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "structural_upgrades": [
+    "multi_story_houses",
+    "decorative_gardens",
+    "orchards",
+    "tanneries",
+    "breweries",
+    "bakeries",
+    "carpentry_shops",
+    "village_walls",
+    "auto_paths",
+    "landmarks",
+    "notice_board",
+    "village_manager"
+  ]
+}

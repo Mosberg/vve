@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Village Types",
+  "version": "1.0.0",
+  "minecraft_version": "1.21.11",
+  "village_types": [
+    {
+      "id": "frontier_village",
+      "name": "Frontier Villages",
+      "biomes": ["plains", "savanna"],
+      "features": ["watchtowers", "hunting_cabins"],
+      "rarity": 0.3
+    },
+    {
+      "id": "harbor_village",
+      "name": "Harbor Villages",
+      "biomes": ["beach", "river"],
+      "features": ["docks", "fishing_huts", "shipwrights", "trading_piers"],
+      "rarity": 0.2
+    },
+    {
+      "id": "mountain_monastery",
+      "name": "Mountain Monasteries",
+      "biomes": ["mountains", "stony_peaks"],
+      "features": ["libraries", "shrines"],
+      "rarity": 0.15
+    },
+    {
+      "id": "forest_enclave",
+      "name": "Forest Enclaves",
+      "biomes": ["forest", "dark_forest"],
+      "features": ["treehouses", "rope_bridges"],
+      "rarity": 0.25
+    },
+    {
+      "id": "nomad_camp",
+      "name": "Nomad Camps",
+      "biomes": ["desert", "plains"],
+      "features": ["tents", "temporary_structures"],
+      "rarity": 0.4,
+      "temporary": true
+    }
+  ]
+}
