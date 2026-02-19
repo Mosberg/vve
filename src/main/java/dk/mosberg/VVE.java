@@ -2,7 +2,7 @@ package dk.mosberg;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import dk.mosberg.block.VillageManagerBlock;
+import dk.mosberg.block.VVEBlocks;
 import dk.mosberg.defense.BuiltinDefense;
 import dk.mosberg.defense.raid.BuiltinRaids;
 import dk.mosberg.economy.BuiltinPlayerShops;
@@ -26,7 +26,8 @@ public class VVE implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        VillageManagerBlock.register();
+        // Register the village manager block
+        VVEBlocks.register();
         // Register all built-in festivals and story events
         BuiltinFestivals.registerAll();
         // Register all built-in advanced raids, siege weapons, elite pillagers
