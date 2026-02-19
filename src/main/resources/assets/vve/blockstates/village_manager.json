@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vve:block/village_manager"
+    }
+  }
+}
