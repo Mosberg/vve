@@ -26,6 +26,18 @@ public class VVE implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        // Centralized config loading
+        var villageTypesConfig = dk.mosberg.data.JsonDataLoader.loadConfig(
+                "data/vve/village_types.json", dk.mosberg.data.VillageTypesConfig.class);
+        var villageThemesConfig = dk.mosberg.data.JsonDataLoader.loadConfig(
+                "data/vve/village_themes.json", dk.mosberg.data.VillageThemesConfig.class);
+        var villagerProfessionsConfig =
+                dk.mosberg.data.JsonDataLoader.loadConfig("data/vve/villager_professions.json",
+                        dk.mosberg.data.VillagerProfessionsConfig.class);
+        var villagerPreferencesConfig =
+                dk.mosberg.data.JsonDataLoader.loadConfig("data/vve/villager_preferences.json",
+                        dk.mosberg.data.VillagerPreferencesConfig.class);
+
         // Register the village manager block
         VVEBlocks.register();
         // Register all built-in festivals and story events
@@ -36,12 +48,12 @@ public class VVE implements ModInitializer {
         BuiltinPlayerShops.registerAll();
         // Register all built-in villager personalities
         BuiltinVillagerPersonalities.registerAll();
-        // Register all built-in village themes
-        BuiltinVillageThemes.registerAll();
-        // Register all built-in village types
-        BuiltinVillageTypes.registerAll();
-        // Register all built-in professions
-        BuiltinProfessions.registerAll();
+        // Register all built-in village themes using config
+        BuiltinVillageThemes.registerAll(villageThemesConfig);
+        // Register all built-in village types using config
+        BuiltinVillageTypes.registerAll(villageTypesConfig);
+        // Register all built-in professions using config
+        BuiltinProfessions.registerAll(villagerProfessionsConfig);
         // Register all built-in trade goods
         BuiltinTradeGoods.registerAll();
         // Register all built-in threats and defense upgrades
@@ -52,7 +64,6 @@ public class VVE implements ModInitializer {
         BuiltinStructuralUpgrades.registerAll();
         // Reputation system is now available
         // Config system is now available
-        LOGGER.info(
-                "Registered built-in village types, professions, trade goods, threats, defense upgrades, quest types, story arcs, structural upgrades, initialized reputation and config system.");
+        LOGGER.info("Registered built-in configs and initialized systems.");
     }
 }

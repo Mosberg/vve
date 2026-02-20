@@ -16,6 +16,16 @@ public class VillageTheme {
         this.properties = properties;
     }
 
+    // New constructor for config-based registration
+    public VillageTheme(String id, String name, java.util.List<String> blocks,
+            java.util.List<String> decor) {
+        this.id = id;
+        this.name = name;
+        this.properties = new java.util.HashMap<>();
+        this.properties.put("blocks", blocks);
+        this.properties.put("decor", decor);
+    }
+
     public String getId() {
         return id;
     }

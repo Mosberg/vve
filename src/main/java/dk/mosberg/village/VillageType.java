@@ -21,6 +21,16 @@ public class VillageType {
         this.properties = properties;
     }
 
+    // New constructor for config-based registration
+    public VillageType(dk.mosberg.data.VillageType dataType) {
+        this.id = dataType.id;
+        this.displayName = dataType.name;
+        this.defaultStructures = dataType.features;
+        this.properties = new java.util.HashMap<>();
+        this.properties.put("biomes", dataType.biomes);
+        this.properties.put("rarity", dataType.rarity);
+    }
+
     public String getId() {
         return id;
     }

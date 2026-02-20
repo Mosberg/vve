@@ -14,18 +14,38 @@ public class VillageManagerScreen extends Screen {
 
     @Override
     protected void init() {
-        // TODO: Example: Add buttons for upgrades, jobs, treasury, happiness
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Upgrade Village"), btn -> {
-            // TODO: Upgrade logic
+            // Example: Print to log or show dialog
+            var player = net.minecraft.client.MinecraftClient.getInstance().player;
+            if (player != null) {
+                player.sendMessage(
+                        Text.literal("Upgrade Village clicked! (Stub: implement upgrade logic)"),
+                        false);
+            }
         }).position(10, 20).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Assign Jobs"), btn -> {
-            // TODO: Job assignment logic
+            var player = net.minecraft.client.MinecraftClient.getInstance().player;
+            if (player != null) {
+                player.sendMessage(
+                        Text.literal("Assign Jobs clicked! (Stub: implement job assignment logic)"),
+                        false);
+            }
         }).position(10, 50).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Manage Treasury"), btn -> {
-            // TODO: Treasury logic
+            var player = net.minecraft.client.MinecraftClient.getInstance().player;
+            if (player != null) {
+                player.sendMessage(
+                        Text.literal("Manage Treasury clicked! (Stub: implement treasury logic)"),
+                        false);
+            }
         }).position(10, 80).size(120, 20).build());
         this.addDrawableChild(ButtonWidget.builder(Text.literal("Track Happiness"), btn -> {
-            // TODO: Happiness logic
+            var player = net.minecraft.client.MinecraftClient.getInstance().player;
+            if (player != null) {
+                player.sendMessage(
+                        Text.literal("Track Happiness clicked! (Stub: implement happiness logic)"),
+                        false);
+            }
         }).position(10, 110).size(120, 20).build());
     }
 }

@@ -1,5 +1,26 @@
 # \*🌾 Village & Villager Expansion — Mod Concept\*\*
 
+- **Overview**: This mod aims to transform Minecraft villages into dynamic, evolving communities with enhanced structures, smarter villagers, new professions, and a deeper economy. Players can interact with villagers in more meaningful ways, influence village growth, and experience a richer village life.
+- **Key Features**:
+  1. Village Generation Enhancements
+  2. Villager Behavior Overhaul
+  3. New Villager Professions
+  4. Village Economy System
+  5. Village Defense & Threats
+  6. Player Reputation & Influence
+  7. Quest & Story System
+  8. Village Customization Tools
+  9. Villager Personality System
+  10. Configurable Settings (Mod Menu Options)
+
+- **Development Roadmap**:
+  - Phase 1: Core Mechanics (Village generation, basic villager AI, new professions)
+  - Phase 2: Economy & Reputation Systems
+  - Phase 3: Quests, Storylines, and Customization
+  - Phase 4: Polishing, balancing, and performance optimization
+
+- **Data-Driven Design**: All features will be configurable via JSON files, allowing for easy customization and mod compatibility. This includes village types, villager professions, trade offers, quest templates, and more.
+
 ## **1. Village Generation Enhancements**
 
 ### **New Village Types**

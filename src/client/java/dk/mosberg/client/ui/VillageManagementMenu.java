@@ -18,26 +18,52 @@ public class VillageManagementMenu {
     }
 
     public void open() {
-        // Example: Open a stub screen using Minecraft's client API
         net.minecraft.client.MinecraftClient.getInstance()
                 .setScreen(new net.minecraft.client.gui.screen.Screen(
                         net.minecraft.text.Text.of("Village Management Menu")) {
-                    // TODO: Stub screen, add widgets and logic as needed
+                    @Override
+                    protected void init() {
+                        int y = 20;
+                        for (String action : availableActions) {
+                            this.addDrawableChild(net.minecraft.client.gui.widget.ButtonWidget
+                                    .builder(net.minecraft.text.Text.of(action), btn -> {
+                                        var player = net.minecraft.client.MinecraftClient
+                                                .getInstance().player;
+                                        if (player != null) {
+                                            player.sendMessage(net.minecraft.text.Text
+                                                    .of("Clicked: " + action), false);
+                                        }
+                                    }).position(10, y).size(160, 20).build());
+                            y += 30;
+                        }
+                    }
                 });
     }
 
     public void assignJob(String villagerId, String jobId) {
-        // TODO: Stub: Send job assignment to server or update local state
-        System.out.printf("Assigning job %s to villager %s\n", jobId, villagerId);
+        var player = net.minecraft.client.MinecraftClient.getInstance().player;
+        if (player != null) {
+            player.sendMessage(net.minecraft.text.Text
+                    .of("Assigning job " + jobId + " to villager " + villagerId), false);
+        }
+        // TODO: Send packet to server for job assignment
     }
 
     public void setPatrolRoute(String routeId) {
-        // TODO: Stub: Send patrol route to server or update local state
-        System.out.printf("Setting patrol route %s\n", routeId);
+        var player = net.minecraft.client.MinecraftClient.getInstance().player;
+        if (player != null) {
+            player.sendMessage(net.minecraft.text.Text.of("Setting patrol route " + routeId),
+                    false);
+        }
+        // TODO: Send packet to server for patrol route
     }
 
     public void approveExpansion(String expansionId) {
-        // TODO: Stub: Send expansion approval to server or update local state
-        System.out.printf("Approving expansion %s\n", expansionId);
+        var player = net.minecraft.client.MinecraftClient.getInstance().player;
+        if (player != null) {
+            player.sendMessage(net.minecraft.text.Text.of("Approving expansion " + expansionId),
+                    false);
+        }
+        // TODO: Send packet to server for expansion approval
     }
 }

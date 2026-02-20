@@ -21,6 +21,18 @@ public class VillagerProfession {
         this.properties = properties;
     }
 
+    // New constructor for config-based registration
+    public VillagerProfession(String id, String name, java.util.List<String> trades,
+            java.util.List<String> abilities, java.util.List<String> progression) {
+        this.id = id;
+        this.displayName = name;
+        this.levels = null; // Not available from config, or could be mapped if needed
+        this.properties = new java.util.HashMap<>();
+        this.properties.put("trades", trades);
+        this.properties.put("abilities", abilities);
+        this.properties.put("progression", progression);
+    }
+
     public String getId() {
         return id;
     }
